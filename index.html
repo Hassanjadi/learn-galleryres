@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid | Gallery</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #ffffff;
+      text-align: center;
+      margin: 50px auto;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .gallery {
+      width: 50%;
+      margin: 24px auto;
+      border: 10px solid white;
+      list-style: none;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+      display: grid;
+      grid-gap: 8px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  </style>
+  <body>
+    <h2>Responsive Gallery</h2>
+    <ul class="gallery">
+      <li><img src="img/1.jpg" alt="" /></li>
+      <li><img src="img/2.jpg" alt="" /></li>
+      <li><img src="img/3.jpg" alt="" /></li>
+      <li><img src="img/4.jpg" alt="" /></li>
+      <li><img src="img/5.jpg" alt="" /></li>
+      <li><img src="img/6.jpg" alt="" /></li>
+      <li><img src="img/7.jpg" alt="" /></li>
+      <li><img src="img/8.jpg" alt="" /></li>
+      <li><img src="img/9.jpg" alt="" /></li>
+      <li><img src="img/10.jpg" alt="" /></li>
+    </ul>
+  </body>
+</html>
